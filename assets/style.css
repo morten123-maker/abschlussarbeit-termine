@@ -131,6 +131,10 @@ section[id]{scroll-margin-top:170px}
 .gi-b .ti{font-size:20px;font-weight:700}
 
 /* Formulare, Kontakt */
+.fig{margin:0 0 0;border:1px solid #0a0a0a;background:#f1f1ef}
+.fig iframe{display:block;width:100%;height:min(78vh,820px);min-height:420px;border:0;background:#f1f1ef}
+.fig-bar{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding:12px 16px;border-top:1px solid #0a0a0a;background:#ffffff;font-size:15px}
+.fig-bar p{margin:0;color:#4a4a4a}
 .sec-h{margin:0 0 16px;font-weight:800;font-size:clamp(22px,3vw,30px);letter-spacing:-.02em}
 .dl-list{margin:0;padding:0;list-style:none;border-bottom:1px solid #0a0a0a}
 .dl-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 24px;align-items:center;padding:14px 0;border-top:1px solid #0a0a0a}
