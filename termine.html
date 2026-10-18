@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termine, Morten Franken</title>
+<meta name="description" content="Termine, Fristen und Formulare für die Bachelorarbeit Gestaltung an der HSBI, Abschluss Februar 2027.">
+<meta name="author" content="Morten Franken">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="pg">
+<div class="nav-fix">
+<header class="hdr"><div class="hdr-in">
+<a class="brand" href="index.html" aria-label="Startseite, HSBI Gestaltung, Abschluss 2027"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg></span><span class="brand-t"><b>HSBI</b> Gestaltung<span>Abschluss 2027</span></span></a>
+<nav aria-label="Hauptnavigation"><ul class="pill"><li><a class="pi" href="arbeitsprozess.html">Arbeitsprozess</a></li><li><a class="pi" href="galerie.html">Galerie</a></li><li class="m-only"><a class="pi" href="termine.html" aria-current="page">Termine</a></li></ul></nav>
+<div class="act"><a class="chip" href="termine.html" aria-current="page">Termine</a></div>
+</div></header>
+<div class="sub"><nav class="sub-in" aria-label="Abschnitte dieser Seite"><a class="si on" href="#kalender" aria-current="true">Kalender</a><a class="si" href="#formulare">Formulare</a><a class="si" href="#kontakt">Kontakt</a></nav></div>
+</div>
+<main>
+<section class="wrap hero" aria-labelledby="h1">
+<div><h1 class="h1" id="h1">Termine</h1></div>
+<div class="next">
+<p class="tt" id="nextTitle">&ndash;</p>
+<p class="dd" id="nextDate"></p>
+<a class="btn" id="nextHref" href="#" target="_blank" rel="noopener" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg><span>PDF laden</span></a>
+<div class="timers" role="timer" aria-label="Restzeit">
+<p><span class="tl">Nächster offener Termin</span><span id="tNext">&ndash;</span></p>
+<p><span class="tl">Abgabe Werk</span><span id="tEnd">&ndash;</span></p>
+</div>
+<div class="prog">
+<div class="prog-h"><span><span class="tl">Erledigt</span> <strong id="progTxt" aria-live="polite">0 von 0</strong></span>
+<button class="reset" id="reset" type="button" hidden>Zurücksetzen</button></div>
+<div class="bar" aria-hidden="true"><i id="progBar" style="width:0%"></i></div>
+</div>
+</div>
+</section>
+<section class="wrap" id="kalender" aria-label="Kalender">
+<div class="legend"><span class="lg"><i class="sw"></i>Termin</span><span class="lg"><i class="sw f"></i>Frist</span></div>
+<div id="cal"></div>
+</section>
+<section class="wrap" id="formulare" aria-labelledby="formulare-h" style="padding-top:72px">
+<h2 class="sec-h" id="formulare-h">Formulare</h2>
+<ul class="dl-list" id="forms"></ul>
+</section>
+<section class="wrap" id="kontakt" aria-labelledby="kontakt-h" style="padding-top:72px">
+<h2 class="sec-h" id="kontakt-h">Kontakt</h2>
+<div class="people">
+<div class="person"><p class="r">Prüfer:in</p><p class="nm">Prof. Nieves de la Fuente Gutiérrez</p><p class="c"><a href="mailto:nieves.de_la_fuente_gutierrez@hsbi.de">nieves.de_la_fuente_gutierrez@hsbi.de</a><br>+49 521 106-70893</p></div>
+<div class="person"><p class="r">Abgabe, Studierendenservice</p><p class="nm">Andrea Junge</p><p class="c"><a href="mailto:andrea.junge@hsbi.de">andrea.junge@hsbi.de</a><br>+49 521 106-7715</p></div>
+<div class="person"><p class="r">Vorsitz Prüfungsausschuss</p><p class="nm">Prof. Dr. Andreas Beaugrand</p><p class="c"><a href="mailto:andreas.beaugrand@hsbi.de">andreas.beaugrand@hsbi.de</a><br>+49 521 106-7663</p></div>
+<div class="person"><p class="r">Studiengangsleitung</p><p class="nm">Prof. Patricia Stolz</p><p class="c"><a href="mailto:patricia.stolz@hsbi.de">patricia.stolz@hsbi.de</a><br>+49 521 106-7619</p></div>
+</div>
+<p class="src">Inoffizielle Übersicht nach hsbi.de/gestaltung/termine, Stand Oktober 2026. Verbindlich sind die Angaben der HSBI. <a href="https://www.hsbi.de/gestaltung/termine" target="_blank" rel="noopener">Semestertermine</a>, <a href="https://www.hsbi.de/gestaltung/formulare" target="_blank" rel="noopener">Alle Formulare</a>, <a href="https://cat.hsbi.de/hio/pages/cs/sys/portal/hisinoneStartPage.faces" target="_blank" rel="noopener">CAT-Portal</a></p>
+</section>
+</main>
+<footer class="foot"><div class="wrap foot-in"><p>Morten Franken, HSBI Gestaltung, Abschluss 2027</p><nav class="flk" aria-label="Fußnavigation"><a href="arbeitsprozess.html">Arbeitsprozess</a><a href="galerie.html">Galerie</a><a href="termine.html">Termine</a></nav></div></footer>
+<script src="assets/termine.js"></script>
+</body>
+</html>

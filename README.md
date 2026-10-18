@@ -1,25 +1,30 @@
-# Abschluss 2027
+# Abschluss 2027, Morten Franken
 
-Persönliche Übersicht für die Bachelorarbeit Gestaltung an der HSBI (Abgabe Februar 2027): Kalender mit allen Terminen und Fristen, Infos und Formulare in den Dropdowns, Countdown zur nächsten offenen Frist und eine Checkliste zum Abhaken.
+Dokumentation der Bachelorarbeit Gestaltung an der HSBI. Reine HTML-, CSS- und JavaScript-Dateien, kein Build-Schritt nötig.
 
-Quelle der Termine: [hsbi.de/gestaltung/termine](https://www.hsbi.de/gestaltung/termine), Stand Oktober 2026. Verbindlich sind immer die Angaben der HSBI.
+## Aufbau
+
+- `index.html`, Startseite
+- `arbeitsprozess.html`, `galerie.html`, leere Seiten für die Dokumentation
+- `termine.html`, Kalender, Formulare und Kontakt
+- `assets/style.css`, alle Styles
+- `assets/termine.js`, Daten und Logik für die Termine
+- `assets/fonts/`, Hanken Grotesk, lokal eingebunden (keine Verbindung zu Google)
 
 ## Online stellen mit GitHub Pages
 
-1. Neues Repository auf GitHub anlegen, z. B. `abschluss-2027`.
-2. `index.html`, `README.md` und `.nojekyll` hochladen (Add file → Upload files).
-3. Settings → Pages → Source: „Deploy from a branch“, Branch `main`, Ordner `/ (root)`.
-4. Nach etwa einer Minute ist die Seite unter `https://<dein-name>.github.io/abschluss-2027/` erreichbar.
+1. Neues Repository auf GitHub anlegen und alle Dateien dieses Ordners hochladen (Inhalt direkt ins Hauptverzeichnis).
+2. Im Repository auf Settings, dann Pages.
+3. Bei Source "Deploy from a branch" wählen, Branch `main` und Ordner `/ (root)`, speichern.
+4. Nach ein bis zwei Minuten ist die Seite unter `https://DEIN-NAME.github.io/REPOSITORY/` erreichbar.
 
-## Abhaken
+## Aktualisieren
 
-Die Häkchen werden im `localStorage` des Browsers gespeichert. Sie bleiben also auf diesem Gerät und in diesem Browser erhalten, werden aber nicht zwischen Geräten synchronisiert. „Zurücksetzen“ im schwarzen Kasten entfernt alle Häkchen.
+Datei ändern, committen, pushen. GitHub Pages veröffentlicht die neue Version automatisch.
 
-## Termine ändern
+- Termine und Fristen pflegst du oben in `assets/termine.js` (Liste `EVENTS`).
+- Neue Einträge für Arbeitsprozess und Galerie legst du direkt in `arbeitsprozess.html` bzw. `galerie.html` im Bereich `<main>` an. Die Klassen für das Kastensystem (`.day`, `.sp`, `.cl`, `.cr`, `.ev`, `.grid`, `.gi`) stehen in `assets/style.css`.
 
-Alle Termine stehen im Array `EVENTS` im `<script>` am Ende von `index.html`. Monate sind 1-basiert (`[2027,2,2,10,0]` = 02.02.2027, 10:00 Uhr). Wochentage werden automatisch berechnet.
+## Lokal ansehen
 
-- `kind: 'f'` – Frist (schwarz), `kind: 't'` – Termin (grau)
-- `deadline: true` – erscheint als „nächste Frist“ im schwarzen Kasten
-- `final: true` – Ziel des Countdowns „Abgabe Werk“
-- `id` nicht nachträglich ändern, sonst gehen gespeicherte Häkchen für diesen Termin verloren
+`index.html` per Doppelklick im Browser öffnen.
